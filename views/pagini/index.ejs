@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="keywords" content="bmx, ciclecross, sosea, piese biciclete, biciclete acumulator, bicicleta electrica, mountain bike">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Site biciclete">
+	<meta name="author" content="Mitrache Bogdan">
+
+	<title>Biciclete - WeBike</title>
+	<link rel="stylesheet" type="text/css" href="css/meniu-mediu.css" media="screen and (max-width: 800px)">
+	<link rel="stylesheet" type="text/css" href="css/meniu-mic.css" media="screen and (max-width: 500px)">
+	<link rel="shortcut icon" type="image/x-icon" href="imagini/favicon.png">
+	<link rel="stylesheet" type="text/css" href="css/principal.css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css" />
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">
+
+	<head>
+		<%- include("../fragmente/head") %>
+	</head>
+    <style>
+        th,td{
+            border:1px solid black;
+            padding:5px;
+        }
+        td:empty{
+            padding:20px;
+            /*text-align: center;
+    		vertical-align: middle;*/
+        }
+        table{
+            empty-cells:show;
+			border-collapse: separate;
+			border-spacing: 1px;
+			width: 100%;
+        }
+    </style>
+
+</head>
+
+<body>
+	<header>
+		<%- include("../fragmente/header") %>
+	</header>
+		<main>
+
+			<h1 class="fstelm">Biciclete</h1>
+			<nav>
+				<ul>
+					<li><a href="#mtb">Mountain Bike</a></li>
+					<li><a href="#electrice">Electrice</a></li>
+					<li><a href="#sosea">Sosea-Ciclocross</a></li>
+					<li><a href="#bmx">BMX-Street-Dirt</a></li>
+				</ul>
+			</nav>
+
+			<section id="mtb">
+				<h2 > <span class="fas fa-mountain"></span> Mountain Bike</h2>
+				<img src="imagini/pag1/mtb.jpg" alt="Poza mountain bike" title="MTB" width="400" height="300"><br>
+				<p>Bicicletele de tip <i>mountain bike</i> sunt facute pentru tenerurile accidentate, cele din afara orasului. Datorita designului lor ofera performanta si durabilitate pe cele mai dure traseuri. Acestea vin echipate cu furci de suspensie, roti mai late si mai dure, frane mai puternice, pe disc si dimensiuni putin mai mici pentru a ajuta la urcarea pe diferite obstacole.</p>
+			</section>
+
+			<section id="electrice">
+				<h2> <span class="fas fa-bicycle"></span> Biciclete electrice</h2>
+				<img src="imagini/pag1/electrica.jpg" alt="Poza bicicleta electrica" title="Electrica" width="400" height="300">
+				<p><b>Bicicleta electrica</b> este o <b>bicicleta cu acumulator</b> care iti permite sa te deplasezi rapid si usor fara nevoia de a mai pedale, insa vine cu o serie de costuri suplimentare, avantaje si dezavantaje comparativ cu bicicleta traditionala.<br>
+					Un avantaj ar fi ca poti parcurge distante mari fara sa obosesti. O bicicleta obisnuita poate deveni obositoare daca parcurgi 20km dus-intors de la birou. Practic, o bicicleta electrica este ideala pentru persoanele practice, care nu pun neaparat accentul pe experienta pedalarii, ci pe eficienţa drumului în sine.<br>
+					Relativ unui scooter, motocicleta sau o masina aceasta insa are costuri destul de reduse de intretinere, reincarcarea beteriei avand costuri mai mici si decat un abanonament cu mijloacele de transport in comun.
+					Pe de alta parte, niciun produs nu este perfect, iar greunatea acesteia este una din imperfectiuni. Motorul adauga bicicletei cel putin 10km in plus, prin urmare fii mai greu sa trasportat, in special daca locuiesti la bloc. Desigur, si preturile bicicletei sunt mai ridicate decat una traditionala.
+				</p>
+			</section>
+
+			<section id="sosea">
+				<h2 ><span class="fas fa-road"></span> Biciclete sosea-ciclocross</h2>
+				<img src="imagini/pag1/cursiera.jpg" alt="Poza Cursiera" title="Cursiera" width="400" height="300">
+				<p>
+					Bicicletele Ciclocross sunt din ce în ce mai populare în rândul consumatorilor pentru versatilitatea lor: au unele dintre avantajele geometriei și aerodinamice ale bicicletelor de drum, dar au anvelope mai largi, au uneori brațuri pentru aripi și rafturi și sunt suficient de robuste pentru turism și unele pentru utilizarea drumului.
+				</p>
+			</section>	
+
+			<section id="bmx">
+				<h2> <span class="fas fa-biking"></span> Biciclete BMX</h2>
+				<picture>
+			<!-- il ia pe primul care se potriveste cu query-ul din media-->
+			<source srcset="imagini/pag1/bmx1.jpg" media="(max-width:300px)"/>
+			<source srcset="imagini/pag1/bmx2.jpg" media="(max-width:800px)"/>
+			<img src="imagini/pag1/bmx.jpg" alt="BMX" width="400" height="300" />
+			</picture>
+				<p>Deși inițial denotă o bicicletă destinată cursei BMX, termenul „bicicletă BMX” este acum folosit pentru a cuprinde biciclete de curse, precum și cele utilizate pentru disciplinele de murdărie, vert, parc, stradă, plat și BMX freestyle ale BMX. Ramele BMX sunt realizate din diferite tipuri de oțel și (în mare parte în categoria curse) din aluminiu sau carbon. Bicicletele mai ieftine și low-end sunt de obicei fabricate din oțel. Bicicletele cu gamă largă sunt în mare parte oțel cromoliu sau cu o înaltă rezistență, deși acesta din urmă este semnificativ mai greu în ceea ce privește rezistența. Bicicletele BMX de înaltă performanță utilizează cromolie ușoară 4130 sau cromolie de generația 3.
+				</p>
+
+			</section><br>
+
+			<video id="video" width="640" heigth="480" controls="controls">
+				<source src="video/choose.mp4" type="video/mp4">
+				<source src="video/choose.ogv" type="video/ogv">
+				<track default src="data:image/png;base64,
+				V0VCVlRUIC0gc3VidGl0cmFyZQ0KDQowMDoxMC4wMDAgLS0+IDAwOjEzLjAwMCBhbGlnbjpsZWZ0DQpFc3RlIGltcG9ydGFudCBzYSBpdGkgZ2FzZXN0aSBvIGJpY2lsZXRhIGNhcmUgc2EgZmllIHBvdHJpdml0YSA8Yj5uZXZvaWxvciB0YWxlPC9iPiBzaSBidWdldHVsdWkgdGF1Lg0KCg0KCjAwOjEzLjIwNSAtLT4gMDA6MTcuMjA1IGFsaWduOmxlZnQNCjxiPkJ1Z2V0dWw8L2I+IHRhdSB2YSBkZXRlcm1pbmEgY2FsaXRhdGVhIGJpY2ljbGV0ZWkgdGFsZSBzaSBhIGNvbXBvbmVudGVsb3IuCgoNCg0KMDA6MTcuMzAwIC0tPiAwMDoyMC45MTIJYWxpZ246bGVmdA0KUGVudHJ1IGEgY3VtcGFyYSBvIGJpY2lsZXRhLCBkZXRlcm1pbmEgY2UgZmVsIGRlIHBsaW1iYXJpIG8gc2EgZmFjaQoKLg0KDQowMDoyMS4wMDAgLS0+IDAwOjIyLjUwMAlhbGlnbjpsZWZ0DQogc2kgdW5kZSBvIHNhIGZhY2kgcGxpbWJhcmVhLg0KCg0KCjAwOjIyLjcwMCAtLT4gMDA6MjUuNzE1CiBhbGlnbjpsZWZ0DQpSYXB1bnN1cmlsZSBsYSBhY2VzdGUgZG91YSBpbnRyZWJhcmkgdGUgdm9yIGNvbmR1Y2UgbGEgbm91YSB0YSBiaWNpY2xldGEuDQoKDQoKMDA6MjYuMzg0IC0tPiAwMDoyOS42ODQJYWxpZ246bGVmdA0KRGFjYSBtZXJnaSBpbiBwcmljaXBhbCBwZSBkcnVtdXJpIGFzZmFsdGF0ZSBzaSB0ZSBjb25jZW50cmV6aSBwZSB2aXRlemEuDQoNCgowMDoyOS44OTkgLS0+IDAwOjMzLjU5OSBhbGlnbjpsZWZ0DQpDYXV0YSBvIGJpY2lsZXRhIGRlIGFzZmFsdCBjdSBtYW5lcmUgb3JpZW50YXRlIGluIGpvcyBzaSByb3RpIHN1YnRpcmkKCi4="
+				kind="captions" srclang="ro" label="romana" />
+			</video>
+
+		<div class="scrollbartabel">
+			<table id="program">
+			<caption>Program</caption>
+			<thead>
+				<tr class="program">
+				<th>
+					
+				</th>
+				<th>Vanzari</th>
+				<th>Reparatii</th>
+				<th>Concursuri BMX</th>
+				</tr>
+				<tr class="program">
+				<th scope="row">Luni-Miercuri</th>
+					<td colspan="2">09:00-17:00</td>
+					<td>Inchis</td>
+				</tr>
+				<tr class="program">
+				<th >Joi-Vineri</th>
+					<td>09:00-17:00</td>
+					<td>12:00-16:00</td>
+					<td>Inchis</td>
+				</tr>
+				<tr class="program">
+				<th>Sambata</th>
+				<td>11:00-16:00</td>
+				<td>12:00-15:00</td>
+				<td>Inchis</td>
+				</tr>
+				<tr class="program">
+				<th>Duminica</th>
+				<td>11:00-16:00</td>
+				<td>Inchis</td>
+				<td>12:00-16:00</td>
+				</tr>
+			
+			</thead>
+			</table>
+		</div>
+
+		</main>
+		<footer>
+			<%- include("../fragmente/footer") %>
+		</footer>
+
+	</div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ro">
+	<head>
+		<title>Magazin</title>
+		<%- include("../fragmente/head") %>
+	</head>
+	<body class="container">
+		<header>
+			<%- include("../fragmente/header") %>
+		</header>
+			<h2 class="fstelm">Biciclete</h2>
+			<% for(let i=0;i<locals.bikes.length;i++){ %>
+				<%- include("../fragmente/bicicleta.ejs",{bicicleta: locals.bikes[i]}) %>
+			<% } %>
+
+			<button id="filtrare">Filtreaza</button> 
+
+		<footer>
+			<%- include("../fragmente/footer") %>
+		</footer>
+	</body>
+</html>

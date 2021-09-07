@@ -1,0 +1,39 @@
+
+<nav class="navmeniu">
+	<ul class="menu">
+		<li><a href="/" class="home"><i class="fa fa-home"></i><span>Home</span></a></li>
+		<li><a href="/inreg">Inregistrare</a></li>
+		<li><a href="/biciclete">Biciclete</a></li>
+		<li><a href="">Sectiuni</a>
+			<ul class="submenu">
+				<li><a href="/#video">Video ajutator</a></li>
+				<li><a href="/#program">Program</a></li>
+			</ul>
+		</li> 
+		<li><a href="">Galerii</a>
+			<ul class="submenu">
+				<li><a href="/galeriestatica">Statica</a></li>
+				<li><a href="/galerieanimata">Animata</a></li>
+			</ul>
+			<% if (!locals.utilizator) { %>
+		<li><a href="/login">Login</a></li>
+			<% } %>
+		</li>
+		
+		<% if (locals.utilizator) { %>
+		<li> <a href="" class="salut">Salut, <%= locals.utilizator.username %>  
+			<ul class="submenu">
+				<li><a href="/logout">Logout</a></li>
+			</ul>
+		</li>
+		<% } %>
+	</ul>
+
+	</form>
+</nav>
+
+<% if (locals.utilizator) { %>
+	<p class="salut">Salut, <%= locals.utilizator.username %>  </p>
+<% } %>
+
+

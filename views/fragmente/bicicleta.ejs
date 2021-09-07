@@ -1,0 +1,48 @@
+<style>
+
+.caracteristica{
+    color: rgb(16, 75, 55);
+    font-weight: bold;
+}
+
+</style>
+
+<article>
+
+    <h3>
+        <%= locals.bicicleta.nume %>
+    </h3>
+
+    <table>
+        <td>
+            <img src="<%= bicicleta.imagine %>">
+        </td>
+        <tr>
+            <th></th>
+            <td>
+                <ul>
+                    <li>
+                        <p class="caracteristica">Pret: </p><%= locals.bicicleta.pret %>RON
+                    </li>
+                    <li>
+                        <p class="caracteristica">Culori: </p><%= locals.bicicleta.culori %>
+                    </li>
+                    <li>
+                        <time>
+                            <p class="caracteristica">Data primire: </p><%= locals.bicicleta.dataprimire %>
+                        </time>
+                    </li>
+                    <li>
+                        <p class="caracteristica">Pret: </p><%= locals.bicicleta.pret %>RON
+                    </li>
+                    <li>
+                        <p class="caracteristica">Resigilata: </p> <%= locals.bicicleta.resigilata %>
+                    </li>
+                    <br>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+
+</article>

@@ -1,0 +1,100 @@
+<head>
+    <%- include("../fragmente/head") %>
+</head>
+
+<body class="container">
+
+    <header>
+		<%- include("../fragmente/header") %>
+	</header>
+
+<header>
+    <script src="index.js"></script>
+</header>
+
+<main>
+
+    <div class="afisaj">
+        <h1 class="fstelm">Inregistrare utilizator</h1>
+        <% if (locals.eror !=""){ %>
+        <form method="post" name="Form" class="date" action="/inreg" enctype="multipart/form-data">
+            <p>
+                <label>
+                    Nume* <input type="text" name="nume" value="Bogdan">
+                </label>
+             </p>
+             <p>
+                <label>
+                    Prenume* <input type="text" name="prenume" value="Mitrache">
+                </label>
+             </p>
+             <p>
+                <label>
+                    Username* <input type="text" name="username" value="user001">
+                </label>
+             </p>
+             <p>
+                <label>
+                    Parola* <input type="password" name="parola" value="" id="pass">
+                </label>
+             </p>
+             <p>
+                <label>
+                    Reintroducere parola* <input type="password" name="rparola" value="" id="rpass">
+                </label>
+             </p>
+             <p>
+                <label>
+                    E-mail* <input type="text" name="email" value="proiecttwbiciclete@gmail.com" size="50">
+                </label>
+             </p>
+             <p>
+                <label>
+                    Telefon <input type="text" name="telefon" value="">
+                </label>
+             </p>
+             <p>
+                <label>
+                    Fotografie <input type="file" name="fotografie">
+                </label>
+             </p>
+             <p>
+                 <input type="submit" value="Inregistrare" onclick="validateForm()">
+             </p>
+        </form>
+        <% } %>
+        
+        <%= locals.raspuns + "<br>" + locals.eror %>
+    </div>
+
+ 
+</main>
+<script>
+    function validateForm(){
+        var parola = document.forms["Form"]["parola"].value;
+        var rparola = document.forms["Form"]["rparola"].value;
+        var username = document.forms["Form"]["username"].value;
+        var nume = document.forms["Form"]["nume"].value;
+        var prenume = document.forms["Form"]["prenume"].value;
+        var email = document.forms["Form"]["email"].value;
+
+        if(nume="")
+            alert("Nume nu poate sa fie gol")
+        if(prenume=="")
+            alert("Prenume nu poate sa fie gol")
+        if(username=="")
+            alert("Username nu poate sa fie gol")
+        if(parola=="")
+            alert("Parola nu poate sa fie gol")
+        if(rparola=="")
+            alert("Repetare parola nu poate sa fie gol")
+        if(email=="")
+            alert("Email nu poate sa fie gol")
+    }
+</script>
+
+<footer>
+	<%- include("../fragmente/footer") %>
+</footer>
+
+</body>

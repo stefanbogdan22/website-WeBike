@@ -1,0 +1,42 @@
+<head>
+    <%- include("../fragmente/head") %>
+</head>
+
+<body class="container">
+
+    <header>
+		<%- include("../fragmente/header") %>
+	</header>
+
+<header>
+    <script src="index.js"></script>
+</header>
+
+<main>
+
+    <div class="afisaj">
+        <h1 class="fstelm">Login</h1>
+        
+            <form id="login" method="post" action="/login">
+			
+                <label>
+                    <span>Username:</span> <input type="text" name="username" value="">
+                </label>
+                <label>
+                    <span>Parola:</span> <input type="password" name="parola" value="">
+                </label>
+            
+                <input style="margin-bottom: 500px;" type="submit" value="Login">
+            </form>
+    </div>
+
+    
+
+ 
+</main>
+
+<footer>
+	<%- include("../fragmente/footer") %>
+</footer>
+
+</body>
